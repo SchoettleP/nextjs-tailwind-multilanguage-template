@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import { useContext, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import nightwind from 'nightwind/helper';
+import { TranslationContext } from '../../translation/translationContext';
 import TranslationDropdown from '../../translation/translationDropdown';
 import SvgThemeSwitch from '../../svg/themeSwitch';
 
 const TopBar = () => {
   const router = useRouter();
+  const { t } = useContext(TranslationContext);
 
   useEffect(() => {
     let theme = localStorage.getItem('nightwind-mode');
@@ -24,7 +26,7 @@ const TopBar = () => {
               className="font-bold text-lg text-black cursor-pointer hover:bg-gray-200 p-2 rounded"
               onClick={() => router.push('/')}
             >
-              MyApp
+              {t.app}
             </span>
           </li>
         </ul>

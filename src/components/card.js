@@ -6,7 +6,9 @@ export default function Card({ title, body }) {
           <div className="text-gray-900 font-bold text-xl items-center flex">
             {title}
           </div>
-          <div>{body}</div>
+          <div>
+            <span className="text-black">{body}</span>
+          </div>
         </div>
       </div>
     </div>
