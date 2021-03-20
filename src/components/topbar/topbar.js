@@ -1,9 +1,9 @@
 import { useContext, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import nightwind from 'nightwind/helper';
-import { TranslationContext } from '../../translation/translationContext';
-import TranslationDropdown from '../../translation/translationDropdown';
-import SvgThemeSwitch from '../../svg/themeSwitch';
+import { TranslationContext } from '@translation/translationContext';
+import TranslationDropdown from '@translation/translationDropdown';
+import SvgThemeSwitch from '@icons/themeSwitch';
 
 const TopBar = () => {
   const router = useRouter();

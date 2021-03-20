@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import { useContext } from 'react';
-import { TranslationContext } from '../translation/translationContext';
+import { TranslationContext } from '@translation/translationContext';
 
 export default function Home() {
   const router = useRouter();

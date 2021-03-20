@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "baseUrl": "./",
+    "paths": {
+      "@icons/*": ["src/assets/icons/*"],
+      "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/components/*"],
+      "@translation/*": ["src/translation/*"]
+    }
+  },
+  "exclude": ["node_modules", ".next", "out"]
+}

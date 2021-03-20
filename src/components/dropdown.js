@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import ClickAwayListener from './clickAwayListener';
-import SvgArrowDown from '../svg/arrowDown';
+import SvgArrowDown from '@icons/arrowDown';
 
 const DropdownItem = ({ item: { name, onClick } }) => {
   return (

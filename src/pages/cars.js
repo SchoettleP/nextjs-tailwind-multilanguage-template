@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
-import Card from '../components/card';
+import Card from '@components/card';
 
 function getCars() {
-  // Here you can fetch you Data -> fetch(url).then(...
-  // I will return static Data
+  // Here you can fetch you data -> fetch(url).then(...
+  // I will return static data
   return [
     {
       id: 0,
